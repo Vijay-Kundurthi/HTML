@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Element</title>
+    <style>
+      .container {
+        margin: auto;
+        width: 60%;
+        border: 1px solid #73ad21;
+        background-color: aliceblue;
+        /* padding: 10px; */
+        padding-left: 80px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+      }
+      .inputStyle {
+        width: 80%;
+        height: 30px;
+        margin-bottom: 5px;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+      <h3 style="padding-left: 100px; color: rgb(255, 0, 183);">Input Elements</h3>
+      <form>
+        <input class="inputStyle" type="text" placeholder="User Name" required
+            /><br />
+        <input
+          class="inputStyle"
+          type="password"
+          placeholder="Password"
+        /><br />
+        <input class="inputStyle" type="date" /><br />
+        <input class="inputStyle" type="email" placeholder="Email" value="sample@gmail.com" readonly/><br />
+        <label>Male</label><input type="radio" value="M" /> <label>Female</label
+        ><input type="radio" value="F" /><br />
+        <input class="inputStyle" type="datetime-local" /><br />
+        <input class="inputStyle" type="tel" placeholder="Phone Number" /><br />
+        <input class="inputStyle" type="number" placeholder="Count" min="1" max="5" /><br />
+        <input class="inputStyle" type="range" /><br />
+        <label for="">Hobbies:</label>
+        <ul>
+          <li>
+            <input type="checkbox" disabled/>
+            <label>Playing Games</label>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <label>Books Reading</label>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <label>Cooking</label>
+          </li>
+          <li>
+            <input type="checkbox" />
+            <label>Travelling</label>
+          </li>
+        </ul>
+        <input
+          type="image"
+          src="../image/img_submit.gif"
+          alt="sumbit"
+          width="30"
+          height="30"
+        /><br />
+        <input class="inputStyle" type="month" name="" id="" /><br />
+        <input type="color" value="#73ad21" /><br />
+        <input type="file" name="" id="" /><br />
+        <input type="hidden" name="" /><br />
+        <input class="inputStyle" type="search" placeholder="search" /><br />
+        <input class="inputStyle" type="week" name="" id="" /><br />
+        <input class="inputStyle" type="month" name="" id="" /><br />
+        <input
+          class="inputStyle"
+          type="url"
+          name=""
+          id=""
+          placeholder="URL"
+        /><br />
+        <input type="submit" value="submit" />&nbsp;&nbsp;
+        <input type="reset" value="reset" />
+      </form>
+    </div>
+  </body>
+</html>

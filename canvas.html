@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>canvas</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      height="100"
+      width="200"
+      style="border: 1px solid gray"
+    ></canvas>
+    <canvas
+      id="circle"
+      height="100"
+      width="200"
+      style="border: 1px solid gray"
+    ></canvas>
+    <canvas
+      id="theme"
+      height="100"
+      width="200"
+      style="border: 1px solid gray"
+    ></canvas>
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var context = canvas.getContext("2d");
+      context.moveTo(0, 0);
+      context.lineTo(200, 100);
+      context.stroke();
+      var canvas1 = document.getElementById("circle");
+      var ctx = canvas1.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+      ctx.stroke();
+      var canvas2 = document.getElementById("theme");
+      var ctx1 = canvas2.getContext("2d");
+      // Create gradient
+      var grd = ctx1.createLinearGradient(0, 0, 200, 0);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+
+      // Fill with gradient
+      ctx1.fillStyle = grd;
+      ctx1.fillRect(10, 10, 150, 80);
+    </script>
+  </body>
+</html>

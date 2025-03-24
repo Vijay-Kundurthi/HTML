@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;;
+}
+.container > div {
+    padding: 20px;
+}
+.div1 {
+     background-color: #fff4a3
+}
+.div2 {
+     background-color: #ffc0c7
+}
+.div3 {
+     background-color: #d9eee1
+}

@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+}
+
+.header {
+    background-color: gray;
+    height: 100px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+.content {
+    display: grid;
+    grid-template-columns: 33% 63%;
+    /* padding: 20px; */
+}
+.content .left {
+    background-color: lightgray;
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+}
+.content .right {
+    padding: 10px;
+}
+.footer {
+    background-color: gray;
+    height: 100px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
